@@ -3,6 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" class="wp-toolbar gr__nextpress_co" lang="en-US">
 <!--<![endif]-->
 <head>
+	<?php require 'root.inc.php'; ?>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<title>Material Custom Template </title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -12,20 +13,20 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
 
-	<link rel="stylesheet" href="/assets/load-styles.php" type="text/css" media="all">
-    <link rel="stylesheet" href="/assets/style.css" type="text/css" media="all">
-    <link rel="stylesheet" id="thickbox-css" href="/assets/thickbox.css" type="text/css" media="all">
-	<link rel="stylesheet" id="material-wp_admin-styles-css" href="/assets/paradox.min.css" type="text/css" media="all">
-	<link rel="stylesheet" id="material-wp-css" href="/assets/material-wp.min.css" type="text/css" media="all">
-	<link rel="stylesheet" id="material-wp_dynamic-css" href="/assets/dynamic.min.css" type="text/css" media="all">
-	<script src="/assets/release.min.js.download" type="text/javascript" defer=""></script>
-	<script type="text/javascript" src="/assets/load-scripts.php"></script>
-	<script type="text/javascript" src="/assets/scripts.min.js.download"></script>
-	<script type="text/javascript" src="/assets/ace.js.download"></script>
-	<script type="text/javascript" src="/assets/theme-chrome.js.download"></script>
-	<script type="text/javascript" src="/assets/mode-scss.js.download"></script>
-	<script type="text/javascript" src="/assets/wp-color-picker-alpha-min.js.download"></script>
-	<script type="text/javascript" src="/assets/monitor.js.download"></script>
+	<link rel="stylesheet" href="<?php echo BASE_URL ;?>/files/load-styles.php" type="text/css" media="all">
+    <link rel="stylesheet" href="<?php echo BASE_URL ;?>/files/style.css" type="text/css" media="all">
+    <link rel="stylesheet" id="thickbox-css" href="<?php echo BASE_URL ;?>/files/thickbox.css" type="text/css" media="all">
+	<link rel="stylesheet" id="material-wp_admin-styles-css" href="<?php echo BASE_URL ;?>/files/paradox.min.css" type="text/css" media="all">
+	<link rel="stylesheet" id="material-wp-css" href="<?php echo BASE_URL ;?>/files/material-wp.min.css" type="text/css" media="all">
+	<link rel="stylesheet" id="material-wp_dynamic-css" href="<?php echo BASE_URL ;?>/files/dynamic.min.css" type="text/css" media="all">
+	<script src="<?php echo BASE_URL ;?>/files/release.min.js.download" type="text/javascript" defer=""></script>
+	<script type="text/javascript" src="<?php echo BASE_URL ;?>/files/load-scripts.php"></script>
+	<script type="text/javascript" src="<?php echo BASE_URL ;?>/files/scripts.min.js.download"></script>
+	<script type="text/javascript" src="<?php echo BASE_URL ;?>/files/ace.js.download"></script>
+	<script type="text/javascript" src="<?php echo BASE_URL ;?>/files/theme-chrome.js.download"></script>
+	<script type="text/javascript" src="<?php echo BASE_URL ;?>/files/mode-scss.js.download"></script>
+	<script type="text/javascript" src="<?php echo BASE_URL ;?>/files/wp-color-picker-alpha-min.js.download"></script>
+	<script type="text/javascript" src="<?php echo BASE_URL ;?>/files/monitor.js.download"></script>
 	<script>
 
 		jQuery(document).ready(function($) {
@@ -134,7 +135,7 @@
 					<ul class="wp-submenu wp-submenu-wrap collapsible-body" style="">
 						<li class="wp-submenu-head" aria-hidden="true">Pages</li>
 						<li class="wp-first-item"><a href="#" class="wp-first-item">All Pages</a></li>
-						<li><a href="#e">Add New</a></li>
+						<li><a href="#">Add New</a></li>
 					</ul>
 					<input type="hidden" name="wpbd-menu[]" value="edit.php?post_type=page"><input type="text" class="wpbd-rename-field" name="wpbd-menus-edits[edit.php?post_type=page][rename]" value=""><input type="hidden" name="wpbd-menus-edits[edit.php?post_type=page][hidden]" value="0">
 					<div class="wpbd-hide-menu wpbd-ignore" data-menu="edit.php?post_type=page"><span class="dashicons dashicons-visibility"></span></div>
@@ -272,7 +273,7 @@
 		<div id="wpadminbar" class="">
 			<div class="quicklinks" id="wp-toolbar" role="navigation" aria-label="Toolbar" tabindex="0">
 				<ul id="wp-admin-bar-root-default" class="ab-top-menu">
-					<li id="wp-admin-bar-my-site-logo" class="custom-site-logo"><a class="ab-item" href="#"><img class="material-wp-logo" src="/assets/logo.png"></a>		</li>
+					<li id="wp-admin-bar-my-site-logo" class="custom-site-logo"><a class="ab-item" href="#"><img class="material-wp-logo" src="<?php echo BASE_URL ;?>/files/logo.png"></a>		</li>
 					<li id="wp-admin-bar-menu-toggle"><a class="ab-item" href="#" aria-expanded="false"><span class="ab-icon"></span><span class="screen-reader-text">Menu</span></a>		</li>
 
 
@@ -286,7 +287,7 @@
 		</div>
 		<div id="parallax-main-block" class="parallax-container">
 			<div class="parallax">
-				<img class="parallax-img" src="/assets/bg1.jpg" style="bottom: 0px; display: block; opacity: 0.8;">
+				<img class="parallax-img" src="<?php echo BASE_URL ;?>/files/bg1.jpg" style="bottom: 0px; display: block; opacity: 0.8;">
 				<div id="parallax-content">
 					<div class="container"></div>
 				</div>
@@ -295,7 +296,7 @@
 			<a href="#">
 				<div id="mwp-user-card" class="tooltiped" data-tooltip="Edit your profile" data-position="bottom">
 					<div class="user-card-avatar">
-						<img alt="" src="/assets/profile.jpg" srcset="https://secure.gravatar.com/avatar/5b6c988063f5a446885956c23a8cd50b?s=120&amp;d=mm&amp;r=g 2x" class=" avatar-60 photo" height="60" width="60">
+						<img alt="" src="<?php echo BASE_URL ;?>/files/profile.jpg" srcset="https://secure.gravatar.com/avatar/5b6c988063f5a446885956c23a8cd50b?s=120&amp;d=mm&amp;r=g 2x" class=" avatar-60 photo" height="60" width="60">
 					</div>
 					<div class="user-card-info">
 						<div class="user-card-name">Name of Admin</div>
@@ -458,7 +459,7 @@
 		/* ]]> */
 	</script>
 
-	<script type="text/javascript" src="/assets/common.min.js.download"></script>
+	<script type="text/javascript" src="<?php echo BASE_URL ;?>/files/common.min.js.download"></script>
 	<div class="clear"></div>
 
 </body>
