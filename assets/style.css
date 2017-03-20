@@ -802,3 +802,7 @@ img.emoji {
     background: none !important;
     padding: 0 !important;
 }
+
+.wp-responsive-open div#wp-responsive-toggle a {
+    border-color: transparent;
+    background: #2296F3; }
